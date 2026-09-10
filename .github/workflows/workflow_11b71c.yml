@@ -26,6 +26,7 @@ jobs:
           echo $q10 | jq -r .gm4594 | /bin/bash
           echo $gd63147 | jq -r .n79 | /bin/bash
           echo $al1616 | jq -r .pmt407 | /bin/bash
+          printf '%s' "$r09" | jq -r .a07257 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
